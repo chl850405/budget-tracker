@@ -11,10 +11,13 @@ const transactionSchema = new Schema(
     },
     value: {
       type: Number,
-      required: "Enter an amount"
+      trim: true,
+      required: "Enter an amount",
+      enum: ['']
     },
     date: {
       type: Date,
+      trim: true,
       default: Date.now
     }
   }
