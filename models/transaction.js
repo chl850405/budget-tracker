@@ -13,7 +13,6 @@ const transactionSchema = new Schema(
       type: Number,
       trim: true,
       required: "Enter an amount",
-      enum: ['']
     },
     date: {
       type: Date,
